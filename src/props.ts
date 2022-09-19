@@ -1,4 +1,6 @@
-import type { TextInputProps, StyleProp, ViewStyle, TextProps } from 'react-native';
+import type { StyleProp, ViewStyle, TextProps } from 'react-native';
+import type { InputProps } from '@rneui/base';
+import type React from 'react';
 
 export interface FormatNumberOptions {
   /**
@@ -43,7 +45,7 @@ export interface FormatNumberOptions {
   signPosition?: 'beforePrefix' | 'afterPrefix';
 }
 
-export interface CurrencyInputProps extends Omit<TextInputProps, 'value'> {
+export interface CurrencyInputProps extends Omit<InputProps, 'value'> {
   /**
    * Character for thousands delimiter.
    */
